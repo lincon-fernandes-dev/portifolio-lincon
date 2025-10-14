@@ -32,6 +32,7 @@ export default function ContactPage() {
         {
           from_name: formData.name,
           from_email: formData.email,
+          time: new Date(),
           subject: formData.subject,
           message: formData.message,
         },

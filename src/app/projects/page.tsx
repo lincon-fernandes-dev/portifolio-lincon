@@ -1,24 +1,6 @@
 import Link from "next/link";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-
-interface Project {
-  slug: string;
-  name: string;
-  description: string;
-  githubUrl: string;
-  liveUrl?: string; 
-  imageUrl: string; 
-}
-const mockProjects = [
-  {
-    name: "Portifolio teste",
-    description: "destes de descricao Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum maiores culpa aliquam incidunt. Id dolores rerum magni fuga expedita? Quam similique et dicta non cumque officia reiciendis impedit quod rerum?.",
-    slug: "teste-placeholder",
-    imageUrl: "/images/project-ecommerce.jpg",
-    githubUrl: "/",
-    liveUrl: "/",
-  },
-];
+import {mockProjecstData} from "@/mock/mockProjects"
 
 export default function ProjectsGrid() {
   return (
@@ -29,7 +11,7 @@ export default function ProjectsGrid() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
-          {mockProjects.map((project) => (
+          {mockProjecstData.map((project) => (
             <div
               key={project.slug}
               className="bg-gray-800 rounded-xl shadow-2xl overflow-hidden hover:shadow-teal-500/30 transition-shadow duration-300 transform hover:scale-[1.02]"
@@ -44,7 +26,7 @@ export default function ProjectsGrid() {
                 </h3>
                 
                 <p className="text-gray-400 text-sm mb-4 line-clamp-3">
-                  {project.description}
+                  {project.overview}
                 </p>
                 <div className="flex justify-between items-center mt-4">
                     <Link

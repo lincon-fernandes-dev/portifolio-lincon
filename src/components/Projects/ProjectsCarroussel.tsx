@@ -1,16 +1,5 @@
 import ProjectCardComponent from "./ProjectCard";
-
-const mockProjects = [
-  {
-    name: "Portifolio teste",
-    description: "destes de descricao Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum maiores culpa aliquam incidunt. Id dolores rerum magni fuga expedita? Quam similique et dicta non cumque officia reiciendis impedit quod rerum?.",
-    slug: "teste-placeholder",
-    imageUrl: "/images/project-ecommerce.jpg",
-    githubUrl: "/",
-    liveUrl: "/",
-  },
-];
-
+import { mockProjecstData } from "@/mock/mockProjects";
 
 export default function ProjectsCarrousselComponent() {
   return (
@@ -24,11 +13,11 @@ export default function ProjectsCarrousselComponent() {
         <div 
           className="flex w-full gap-8 overflow-x-auto pb-6 scrollbar-thin scrollbar-thumb-teal-500 scrollbar-track-gray-800"
         >
-          {mockProjects.map((project) => (
+          {mockProjecstData.map((project) => (
             <ProjectCardComponent
               key={project.slug}
               name={project.name}
-              description={project.description}
+              description={project.overview}
               slug={project.slug}
               imageUrl={project.imageUrl}
               githubUrl={project.githubUrl}

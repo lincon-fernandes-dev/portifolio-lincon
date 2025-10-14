@@ -1,32 +1,11 @@
 import Link from "next/link";
 import { FaGithub, FaExternalLinkAlt, FaArrowLeft } from "react-icons/fa";
-import {  SiNextdotjs, SiTailwindcss, SiPostgresql } from 'react-icons/si';
+import {mockProjecstData} from "@/mock/mockProjects";
+import Image from "next/image";
 
-// Mock Data para simular a busca do projeto pelo slug
-const mockProjectData = {
-    slug: "e-commerce-csharp-nextjs",
-    name: "E-Commerce Full-Stack Escalável",
-    tagline: "Desenvolvimento de uma plataforma de vendas de alto desempenho usando C# e Next.js.",
-    imageUrl: "/images/project-ecommerce-large.jpg",
-    githubUrl: "https://github.com/lincon/ecommerce-repo",
-    liveUrl: "https://ecommerce.lincon.dev",
-    technologies: [
-        { name: 'C# / ASP.NET Core', icon: SiNextdotjs, color: 'text-purple-500' },
-        { name: 'Next.js / TypeScript', icon: SiNextdotjs, color: 'text-white' },
-        { name: 'PostgreSQL', icon: SiPostgresql, color: 'text-blue-500' },
-        { name: 'Tailwind CSS', icon: SiTailwindcss, color: 'text-cyan-400' },
-    ],
-    overview: "Este projeto nasceu da necessidade de criar uma solução e-commerce que fosse robusta, rápida e altamente escalável. A arquitetura foi desenhada para separar o frontend e o backend, garantindo que cada camada pudesse ser otimizada independentemente.",
-    challenges: [
-        "Otimização da API em ASP.NET Core para lidar com picos de tráfego durante promoções.",
-        "Implementação de um sistema de cache distribuído usando Redis para reduzir a latência de dados.",
-        "Desenvolvimento de um sistema de pagamento seguro (integração com Stripe) e com logs de rastreamento de erro.",
-    ],
-    results: "A plataforma alcançou um tempo de carregamento de página inferior a 1.5 segundos e suportou 1000 requisições por segundo na API durante testes de estresse, demonstrando a performance e estabilidade do stack C#/.NET.",
-};
 
 export default function ProjectDetailPage({ params }: { params: { projectSlug: string } }) {
-    const project = mockProjectData; 
+    const project = mockProjecstData.find(p => p.slug == params.projectSlug); 
 
     if (!project) {
         return <div className="text-white text-center py-20 bg-gray-900">Projeto não encontrado.</div>;
@@ -75,8 +54,8 @@ export default function ProjectDetailPage({ params }: { params: { projectSlug: s
               </Link>
             )}
           </div>
-          <div className="h-96 w-full bg-gray-800 rounded-lg mb-12 flex items-center justify-center text-gray-500 text-lg overflow-hidden border border-gray-700">
-            MOCK: Visual do Projeto Aqui (Captura de Tela ou Mockup)
+          <div className="h-72 w-4/5 bg-gray-800 rounded-lg mb-12 flex items-center justify-center text-gray-500 text-lg overflow-hidden border border-gray-700 relative">
+            <Image fill src={project.imageUrl} alt={project.name}/>
           </div>
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-white mb-4 border-b border-gray-700 pb-2">
