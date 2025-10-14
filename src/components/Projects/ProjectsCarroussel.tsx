@@ -19,7 +19,7 @@ export default function ProjectsCarrousselComponent() {
               name={project.name}
               description={project.overview}
               slug={project.slug}
-              imageUrl={project.imageUrl}
+              imageUrl={project.thumbUrl}
               githubUrl={project.githubUrl}
               liveUrl={project.liveUrl}
             />

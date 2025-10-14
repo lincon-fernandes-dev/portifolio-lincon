@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import {mockProjecstData} from "@/mock/mockProjects"
+import Image from "next/image";
 
 export default function ProjectsGrid() {
   return (
@@ -16,8 +17,8 @@ export default function ProjectsGrid() {
               key={project.slug}
               className="bg-gray-800 rounded-xl shadow-2xl overflow-hidden hover:shadow-teal-500/30 transition-shadow duration-300 transform hover:scale-[1.02]"
             >
-              <div className="h-48 bg-gray-700 w-full flex items-center justify-center text-gray-400">
-                 <span className="text-sm">Imagem do Projeto ({project.name})</span>
+              <div className="h-48 bg-gray-700 w-full flex items-center justify-center text-gray-400 relative">
+                 <Image src={project.thumbUrl} alt={project.name} fill />
               </div>
               
               <div className="p-6">

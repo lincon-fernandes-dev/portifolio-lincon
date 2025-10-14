@@ -4,7 +4,13 @@ export const mockProjecstData = [{
     slug: "portifolio-lincon",
     name: "Portfólio Pessoal — Lincon Fernandes",
     tagline: "Aplicação desenvolvida em Next.js e Tailwind CSS para apresentar minha trajetória e projetos como desenvolvedor full-stack.",
-    imageUrl: "/Portifolio-lincon.png",
+    thumbUrl: "/Portifolio-lincon.png",
+    images: [
+        "/Projects/portifolio-lincon/homePage.png",
+        "/Projects/portifolio-lincon/sobre.png",
+        "/Projects/portifolio-lincon/contact.png",
+        "/Projects/portifolio-lincon/skills.png"
+    ],
     githubUrl: "https://github.com/lincon-fernandes-dev/portifolio-lincon",
     liveUrl: "https://portifolio-lincon.vercel.app/",
     technologies: [

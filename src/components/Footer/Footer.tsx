@@ -52,12 +52,12 @@ export default function FooterComponent() {
               lincon.fernandes.dev@gmail.com
             </span>
 
-            <a
-              href="mailto:lincon.fernandes.dev@gmail.com"
+            <Link
+              href={"/contact"}
               className="inline-flex items-center bg-teal-500 hover:bg-teal-600 text-gray-900 font-bold py-2 px-4 rounded transition-colors text-sm"
             >
               Mandar E-mail
-            </a>
+            </Link>
           </div>
 
           <div className="w-full md:w-1/4">

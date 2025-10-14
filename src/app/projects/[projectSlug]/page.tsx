@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { FaGithub, FaExternalLinkAlt, FaArrowLeft } from "react-icons/fa";
-import {mockProjecstData} from "@/mock/mockProjects";
+import { mockProjecstData } from "@/mock/mockProjects";
 import Image from "next/image";
-
+// import { div } from "motion/react-client"; // Removido import não utilizado
 
 export default function ProjectDetailPage({ params }: { params: { projectSlug: string } }) {
     const project = mockProjecstData.find(p => p.slug == params.projectSlug); 
@@ -21,6 +21,8 @@ export default function ProjectDetailPage({ params }: { params: { projectSlug: s
     return (
       <section className="bg-gray-900 text-gray-300 py-12 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
+          
+          {/* Botão Voltar */}
           <Link
             href="/#projects"
             className="flex items-center text-teal-400 hover:text-teal-300 transition-colors mb-10 text-lg font-medium"
@@ -28,6 +30,8 @@ export default function ProjectDetailPage({ params }: { params: { projectSlug: s
             <FaArrowLeft className="mr-3" />
             Voltar para Projetos
           </Link>
+
+          {/* TÍTULO E BOTÕES (Seções sem alteração) */}
           <h1 className="text-5xl font-extrabold text-white mb-3 leading-tight">
             {project.name}
           </h1>
@@ -54,9 +58,32 @@ export default function ProjectDetailPage({ params }: { params: { projectSlug: s
               </Link>
             )}
           </div>
-          <div className="h-72 w-4/5 bg-gray-800 rounded-lg mb-12 flex items-center justify-center text-gray-500 text-lg overflow-hidden border border-gray-700 relative">
-            <Image fill src={project.imageUrl} alt={project.name}/>
+          
+          {/* ========== SLIDER DE IMAGENS OTIMIZADO ========== */}
+          <div 
+              className="h-[24rem] sm:h-[30rem] w-full bg-gray-800 rounded-lg mb-12 
+                       flex overflow-x-auto gap-4 p-4 items-center justify-start 
+                       border border-gray-700 shadow-xl snap-x snap-mandatory" // Adiciona snap para rolagem suave
+          >
+            {project.images.map(image => (
+              <div 
+                  key={image} 
+                  // w-full para mobile, w-4/5 para telas maiores. flex-shrink-0 essencial para slider
+                  className="relative w-[85%] sm:w-4/5 lg:w-[70%] h-full flex-shrink-0 snap-center" 
+              >
+                <Image 
+                    fill 
+                    src={image} 
+                    alt={`Screenshot do projeto ${project.name}`}
+                    className="object-contain rounded-lg" // Usamos object-contain para garantir que a imagem não seja cortada
+                    sizes="(max-width: 640px) 85vw, (max-width: 1024px) 80vw, 70vw" // Otimização de imagem
+                />
+              </div>
+            ))}
           </div>
+          {/* ================================================ */}
+
+          {/* SEÇÃO DE STACK TÉCNICA (Sem alteração) */}
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-white mb-4 border-b border-gray-700 pb-2">
               Stack Técnica
@@ -67,6 +94,8 @@ export default function ProjectDetailPage({ params }: { params: { projectSlug: s
               ))}
             </div>
           </div>
+          
+          {/* SEÇÕES DE TEXTO (Sem alteração) */}
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-white mb-4 border-b border-gray-700 pb-2">
               Visão Geral
@@ -92,8 +121,8 @@ export default function ProjectDetailPage({ params }: { params: { projectSlug: s
             </h2>
             <p className="text-lg leading-relaxed">{project.results}</p>
           </div>
+          
         </div>
       </section>
     );
 }
-
