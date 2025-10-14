@@ -20,7 +20,7 @@ export default function HeroSection() {
                     Construindo aplicações completas com C#/.NET, Windows Forms, Next.js e Angular de forma segura e escalável.
                 </h2>
                 
-                <div className="space-x-4">
+                <div className="space-x-4 flex flex-col items-center justify-center gap-4 lg:flex-row">
                     <Link
                         href="/projects" 
                         className="bg-teal-500 text-gray-900 font-bold py-3 px-8 rounded-lg hover:bg-teal-400 transition-colors shadow-lg text-lg"

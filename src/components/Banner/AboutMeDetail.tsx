@@ -15,30 +15,19 @@ export default function AboutMeDetailComponent() {
 
       <div className="space-y-6 text-lg leading-relaxed text-justify">
         <p>
-          Sou um <strong>Desenvolvedor Full Stack</strong> movido pela curiosidade e pela vontade de
-          transformar ideias em soluções digitais que realmente gerem impacto.
-          Atuo principalmente no <strong>backend com C#, ASP.NET Core e AngularJS</strong>, sempre
-          alinhado à <strong>arquitetura limpa</strong> e boas práticas de código.
+          Sou um <strong>Desenvolvedor Full Stack</strong> movido pela curiosidade e pela vontade de transformar ideias em soluções digitais que realmente gerem impacto. Atuo principalmente no <strong>backend com C#, ASP.NET Core e AngularJS</strong>, sempre alinhado à <strong>arquitetura limpa</strong> e boas práticas de código.
         </p>
 
         <p>
-          Tenho experiência completa no ciclo de desenvolvimento de software — desde o
-          planejamento da arquitetura até a entrega em produção. Valorizo
-          <strong> código limpo</strong>, <strong>testes automatizados</strong> e
-          <strong> DevOps</strong> para garantir qualidade e sustentabilidade a longo prazo.
-          Também aplico minhas habilidades com <strong>PostgreSQL / SQL Server</strong> e
-          <strong> AWS / Azure</strong> para criar soluções escaláveis e confiáveis.
+          Tenho experiência completa no ciclo de desenvolvimento de software — desde o planejamento da arquitetura até a entrega em produção. Valorizo <strong>código limpo</strong>, <strong>testes automatizados</strong> e <strong>DevOps</strong> para garantir qualidade e sustentabilidade a longo prazo. Também aplico minhas habilidades com <strong>PostgreSQL / SQL</strong> e<strong> AWS / Azure</strong> para criar soluções escaláveis e confiáveis.
         </p>
 
         <p>
-          Iniciei minha trajetória de forma autodidata, sempre impulsionado pela pesquisa e pela
-          busca constante por conhecimento. Essa dedicação me tornou um desenvolvedor cada vez mais
-          completo e preparado para os desafios do mercado.
+          Iniciei minha trajetória de forma autodidata, sempre impulsionado pela pesquisa e pela busca constante por conhecimento. Essa dedicação me tornou um desenvolvedor cada vez mais completo e preparado para os desafios do mercado.
         </p>
 
         <p>
-          Estou sempre em busca de novos desafios — sejam eles tecnológicos ou pessoais — que me
-          permitam evoluir como profissional e entregar resultados que façam diferença de verdade.
+          Estou sempre em busca de novos desafios — sejam eles tecnológicos ou pessoais — que me permitam evoluir como profissional e entregar resultados que façam diferença de verdade.
         </p>
       </div>
 
