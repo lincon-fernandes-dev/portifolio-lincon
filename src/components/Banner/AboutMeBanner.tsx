@@ -30,10 +30,10 @@ export default function BannerAboutMeComponent() {
                 </div>
                 <div className="w-full sm:w-2/3">
                     <p className="text-gray-300 text-lg leading-relaxed">
-                        Sou um **Engenheiro Full-Stack** apaixonado por transformar ideias em soluções robustas. Minha especialidade é criar o ecossistema completo de aplicações, integrando o poder do **C#/.NET** no backend com a eficiência e a modernidade do **Next.js**. Minha missão é entregar código seguro, escalável e com foco na melhor experiência do usuário.
+                        Sou um <strong>Desenvolvedor Full-Stack</strong> apaixonado por transformar ideias em soluções robustas. Minha especialidade é criar o ecossistema completo de aplicações, integrando o poder do <strong>C#/.NET</strong> no backend com a eficiência e a modernidade do <strong>Next.js</strong>. Minha missão é entregar código seguro, escalável e com foco na melhor experiência do usuário.
                     </p>
                     <Link
-                        href="/contact" 
+                        href="/about" 
                         className="mt-6 inline-block text-lg font-bold text-teal-400 hover:text-teal-300 transition-colors border-b-2 border-teal-400"
                     >
                         Conheça minha trajetória completa →

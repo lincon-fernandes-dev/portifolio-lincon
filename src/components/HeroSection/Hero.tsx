@@ -17,7 +17,7 @@ export default function HeroSection() {
                 </h1>
                 
                 <h2 className="text-2xl sm:text-3xl text-gray-300 mb-10 font-light">
-                    Construindo aplicações completas com C#/.NET Windows Forms Next.js e Angular de forma segura e escalável.
+                    Construindo aplicações completas com C#/.NET, Windows Forms, Next.js e Angular de forma segura e escalável.
                 </h2>
                 
                 <div className="space-x-4">
