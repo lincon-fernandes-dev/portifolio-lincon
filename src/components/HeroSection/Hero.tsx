@@ -20,17 +20,17 @@ export default function HeroSection() {
                     Construindo aplicações completas com C#/.NET, Windows Forms, Next.js e Angular de forma segura e escalável.
                 </h2>
                 
-                <div className="space-x-4 flex flex-col items-center justify-center gap-4 lg:flex-row">
+                <div className="space-x-4 flex flex-col items-center text-center justify-center gap-4 lg:flex-row">
                     <Link
                         href="/projects" 
-                        className="bg-teal-500 text-gray-900 font-bold py-3 px-8 rounded-lg hover:bg-teal-400 transition-colors shadow-lg text-lg"
+                        className="bg-teal-500 text-gray-900 font-bold py-3 px-8 rounded-lg hover:bg-teal-400 transition-colors  text-lg mx-0 text-center mr-0"
                     >
                         Ver Meu Trabalho
                     </Link>
                     
                     <Link
                         href="/contact" 
-                        className="bg-transparent border-2 border-gray-500 text-gray-300 font-bold py-3 px-8 rounded-lg hover:border-teal-400 hover:text-teal-400 transition-colors text-lg"
+                        className="bg-transparent border-2 border-gray-500 text-gray-300 font-bold py-3 px-8 rounded-lg hover:border-teal-400 hover:text-teal-400 transition-colors text-lg mr-0"
                     >
                         Entrar em Contato
                     </Link>

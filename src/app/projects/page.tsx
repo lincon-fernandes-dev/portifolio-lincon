@@ -37,16 +37,17 @@ export default function ProjectsGrid() {
                       Ver Detalhes →
                     </Link>
                     <div className="flex space-x-4">
-                        
+                        {project.githubUrl.length > 1 &&
                         <Link 
-                            href={project.githubUrl} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            aria-label={`Código GitHub do projeto ${project.name}`}
-                            className="text-gray-400 hover:text-white hover:bg-gray-700 p-2 rounded-full transition-colors"
+                        href={project.githubUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        aria-label={`Código GitHub do projeto ${project.name}`}
+                        className="text-gray-400 hover:text-white hover:bg-gray-700 p-2 rounded-full transition-colors"
                         >
                             <FaGithub size={20} />
                         </Link>
+                        }
                         
                         {project.liveUrl && (
                             <Link 

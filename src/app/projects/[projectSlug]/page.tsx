@@ -22,7 +22,6 @@ export default function ProjectDetailPage({ params }: { params: { projectSlug: s
       <section className="bg-gray-900 text-gray-300 py-12 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           
-          {/* Botão Voltar */}
           <Link
             href="/#projects"
             className="flex items-center text-teal-400 hover:text-teal-300 transition-colors mb-10 text-lg font-medium"
@@ -31,21 +30,22 @@ export default function ProjectDetailPage({ params }: { params: { projectSlug: s
             Voltar para Projetos
           </Link>
 
-          {/* TÍTULO E BOTÕES (Seções sem alteração) */}
           <h1 className="text-5xl font-extrabold text-white mb-3 leading-tight">
             {project.name}
           </h1>
           <p className="text-xl text-gray-400 mb-8">{project.tagline}</p>
           <div className="flex space-x-4 mb-12">
+            {project.githubUrl.length > 1 &&
             <Link
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center bg-gray-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-700 transition-colors shadow-lg"
+            href={project.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center bg-gray-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-700 transition-colors shadow-lg"
             >
               <FaGithub className="mr-3" size={20} />
               Código no GitHub
             </Link>
+            }
             {project.liveUrl && (
               <Link
                 href={project.liveUrl}
