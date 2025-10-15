@@ -2,9 +2,11 @@
 import AboutMeDetailComponent from "@/components/Banner/AboutMeDetail"; 
 import { motion } from "framer-motion";
 import { Code2, Cloud, Database, Rocket, Mail } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 export default function AboutPage() {
+  const t = useTranslations();
   return (
     <div className="min-h-screen bg-gray-950 text-gray-300">
       <section className="pt-24 pb-16 text-center">
@@ -91,17 +93,17 @@ export default function AboutPage() {
           className="max-w-2xl mx-auto px-6"
         >
           <h2 className="text-3xl font-bold text-white mb-6">
-            Vamos construir algo incrível juntos?
+            {t('ShallWe')}
           </h2>
           <p className="text-gray-400 mb-8">
-            Estou aberto a oportunidades como desenvolvedor backend ou full-stack — remoto ou presencial.
-          </p>
+            {t('OpenForOpportunities')}
+            </p>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 bg-teal-500 text-gray-900 font-semibold py-3 px-8 rounded-lg hover:bg-teal-400 transition-colors shadow-xl"
           >
             <Mail size={20} />
-            Entre em contato
+            {t('GetInTouch')}
           </Link>
         </motion.div>
       </section>

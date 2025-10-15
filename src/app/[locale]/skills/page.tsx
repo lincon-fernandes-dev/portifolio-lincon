@@ -1,6 +1,7 @@
 import { FaReact, FaDocker, FaAws, FaGitAlt } from 'react-icons/fa';
 import { SiNextdotjs, SiTypescript, SiTailwindcss, SiPostgresql, SiDotnet } from 'react-icons/si';
 import { IoLogoCss3, IoLogoHtml5, IoLogoJavascript } from 'react-icons/io';
+import { useTranslations } from 'next-intl';
 
 
 // Definição do Tipo para uma Habilidade
@@ -47,6 +48,7 @@ const SkillCard: React.FC<{ skill: Skill }> = ({ skill }) => (
 
 
 export default function SkillsSection() {
+  const t = useTranslations();
   return (
     <section
       id="skills"
@@ -54,13 +56,13 @@ export default function SkillsSection() {
     >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-white text-center mb-12 sm:mb-16">
-          Minhas Habilidades e Stack
+          {t('MySkillsStack')}
         </h2>
 
         <div className="space-y-12">
           <div>
             <h3 className="text-2xl font-semibold text-teal-400 border-b border-gray-700 pb-2 mb-6">
-              Front-end (Next.js & React)
+              {t('FrontEnd')}
             </h3>
             <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-7 gap-4">
               {skillsData.frontend.map((skill) => (
@@ -71,7 +73,7 @@ export default function SkillsSection() {
 
           <div>
             <h3 className="text-2xl font-semibold text-teal-400 border-b border-gray-700 pb-2 mb-6">
-              Back-end (C# & .NET)
+              {t('BackEnd')}
             </h3>
             <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-7 gap-4">
               {skillsData.backend.map((skill) => (
@@ -82,7 +84,7 @@ export default function SkillsSection() {
 
           <div>
             <h3 className="text-2xl font-semibold text-teal-400 border-b border-gray-700 pb-2 mb-6">
-              DevOps & Banco de Dados
+              {t('DevOpsDatabase')}
             </h3>
             <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-7 gap-4">
               {skillsData.devopsDatabase.map((skill) => (

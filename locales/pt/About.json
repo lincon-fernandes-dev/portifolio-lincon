@@ -1,0 +1,17 @@
+{
+  "AboutMe": "Sobre mim",
+  "Hello": "Olá, eu sou",
+  "Building": "Construindo aplicações completas com C#/.NET, Windows Forms, Next.js e Angular de forma segura e escalável.",
+  "SeeMyWork": "Ver Meu Trabalho",
+  "DevFullStack": "Desenvolvedor Full-Stack",
+  "Description": "Sou um Desenvolvedor Full-Stack apaixonado por transformar ideias em soluções robustas. Minha especialidade é criar o ecossistema completo de aplicações, integrando o poder do C#/.NET no backend com a eficiência e a modernidade do Next.js. Minha missão é entregar código seguro, escalável e com foco na melhor experiência do usuário.",
+  "KnowMyCareer": "Conheça minha trajetória completa",
+  "About": "Sobre",
+  "AboutFirstParagraph": "Sou um Desenvolvedor Full Stack movido pela curiosidade e pela vontade de transformar ideias em soluções digitais que realmente gerem impacto. Atuo principalmente no backend com C#, ASP.NET Core e AngularJS, sempre alinhado à arquitetura limpa e boas práticas de código.",
+  "AboutSecondParagraph": "Tenho experiência completa no ciclo de desenvolvimento de software — desde o planejamento da arquitetura até a entrega em produção. Valorizo código limpo, testes automatizados e DevOps para garantir qualidade e sustentabilidade a longo prazo. Também aplico minhas habilidades com PostgreSQL / SQL e AWS / Azure para criar soluções escaláveis e confiáveis.",
+  "AboutThirdParagraph": "Iniciei minha trajetória de forma autodidata, sempre impulsionado pela pesquisa e pela busca constante por conhecimento. Essa dedicação me tornou um desenvolvedor cada vez mais completo e preparado para os desafios do mercado.",
+  "AboutFourthParagraph": "Estou sempre em busca de novos desafios — sejam eles tecnológicos ou pessoais — que me permitam evoluir como profissional e entregar resultados que façam diferença de verdade.",
+  "SeeCv": "Ver meu CV completo",
+  "ShallWe": "Vamos construir algo incrível juntos?",
+  "OpenForOpportunities":"Estou aberto a oportunidades como desenvolvedor backend ou full-stack — remoto ou presencial."
+}

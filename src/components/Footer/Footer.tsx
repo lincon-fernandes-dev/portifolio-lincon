@@ -1,9 +1,11 @@
+"use client"
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 export default function FooterComponent() {
   const currentYear = new Date().getFullYear();
-
+  const t = useTranslations();
   return (
     <footer className="bg-gray-900 text-gray-300 py-12 px-4 sm:px-8 md:px-16 lg:px-24">
       <div className="max-w-7xl mx-auto">
@@ -17,35 +19,34 @@ export default function FooterComponent() {
                 href={"/"}
                 className="hover:text-teal-400 transition-colors"
               >
-                Home
+                {t('Home')}
               </Link>
               <Link
                 href={"/projects"}
                 className="hover:text-teal-400 transition-colors"
               >
-                Projetos
+                {t('Projects')}
               </Link>
               <Link
                 href={"/skills"}
                 className="hover:text-teal-400 transition-colors"
               >
-                Habilidades
+                {t('Skills')}
               </Link>
               <Link
                 href={"/about"}
                 className="hover:text-teal-400 transition-colors"
               >
-                Sobre
+                {t('About')}
               </Link>
             </nav>
           </div>
           <div className="w-full md:w-1/3">
             <h2 className="text-xl font-semibold text-white mb-4">
-              Vamos Conversar!
+              {t('LetsTalk')}
             </h2>
             <p className="text-sm mb-4">
-              Estou sempre aberto a discutir novos projetos e oportunidades.
-              Sinta-se à vontade para entrar em contato:
+              {t('AlwaysWilling')}
             </p>
 
             <span className="block text-teal-400 font-medium mb-4">
@@ -56,13 +57,13 @@ export default function FooterComponent() {
               href={"/contact"}
               className="inline-flex items-center bg-teal-500 hover:bg-teal-600 text-gray-900 font-bold py-2 px-4 rounded transition-colors text-sm"
             >
-              Mandar E-mail
+              {t('SendEmail')}
             </Link>
           </div>
 
           <div className="w-full md:w-1/4">
             <h2 className="text-xl font-semibold text-white mb-4">
-              Conecte-se
+              {t('Connect')}
             </h2>
             <nav className="flex space-x-4">
               <Link
@@ -97,11 +98,11 @@ export default function FooterComponent() {
 
         <div className="pt-8 text-center text-xs text-gray-500">
           <p>
-            &copy; {currentYear} Lincon Pietrochinski Fernandes. Todos os
-            direitos reservados.
+            &copy; {currentYear} Lincon Pietrochinski Fernandes. {t('AllRightsReserved')}
           </p>
           <p className="mt-1">
-            Feito com <span className="text-teal-400">Next.js</span> e{" "}
+            {t('MadeWith')}
+            <span className="text-teal-400"> Next.js </span>
             <span className="text-teal-400">Tailwind CSS</span>.
           </p>
         </div>

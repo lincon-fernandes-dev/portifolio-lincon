@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
@@ -19,6 +20,7 @@ export default function ProjectCardComponent({
   githubUrl,
   liveUrl,
 }: ProjectCardProps) {
+  const t = useTranslations();
   return (
     <div className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 bg-gray-800 rounded-xl shadow-2xl overflow-hidden transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-teal-500/30">
       
@@ -42,7 +44,7 @@ export default function ProjectCardComponent({
             href={`/projects/${slug}`}
             className="text-teal-400 hover:text-teal-300 font-semibold text-sm transition-colors border-b border-teal-400"
           >
-            Ver Detalhes
+            {t('SeeDetails')}
           </Link>
           
           <div className="flex space-x-3">

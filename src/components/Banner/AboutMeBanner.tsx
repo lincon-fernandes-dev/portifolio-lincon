@@ -1,8 +1,11 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import Profile from '../../../public/Profile.png' 
+import { useTranslations } from "next-intl";
 
 export default function BannerAboutMeComponent() {
+    const t = useTranslations();
   return (
     <section id="about-banner" className="py-20 px-4 sm:px-6 lg:px-8">
         
@@ -22,21 +25,22 @@ export default function BannerAboutMeComponent() {
             <div className="w-full lg:w-3/4 flex flex-col sm:flex-row gap-6">
                 <div className="w-full sm:w-1/3 flex flex-col justify-center">
                     <p className="font-extrabold text-4xl text-white mb-2 tracking-wide">
-                        About Me
+                        
+                        {t("AboutMe")}
                     </p>
                     <p className="text-xl text-teal-400 font-semibold">
-                        Desenvolvedor Full-Stack
+                        {t('DevFullStack')}
                     </p>
                 </div>
                 <div className="w-full sm:w-2/3">
                     <p className="text-gray-300 text-lg leading-relaxed">
-                        Sou um <strong>Desenvolvedor Full-Stack</strong> apaixonado por transformar ideias em soluções robustas. Minha especialidade é criar o ecossistema completo de aplicações, integrando o poder do <strong>C#/.NET</strong> no backend com a eficiência e a modernidade do <strong>Next.js</strong>. Minha missão é entregar código seguro, escalável e com foco na melhor experiência do usuário.
+                        {t('Description')}
                     </p>
                     <Link
                         href="/about" 
                         className="mt-6 inline-block text-lg font-bold text-teal-400 hover:text-teal-300 transition-colors border-b-2 border-teal-400"
                     >
-                        Conheça minha trajetória completa →
+                        {t('KnowMyCareer')} →
                     </Link>
                 </div>
             </div>

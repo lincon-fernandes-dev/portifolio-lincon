@@ -2,11 +2,12 @@ import Link from "next/link";
 import { FaGithub, FaExternalLinkAlt, FaArrowLeft } from "react-icons/fa";
 import { mockProjecstData } from "@/mock/mockProjects";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 // import { div } from "motion/react-client"; // Removido import não utilizado
 
 export default function ProjectDetailPage({ params }: { params: { projectSlug: string } }) {
     const project = mockProjecstData.find(p => p.slug == params.projectSlug); 
-
+const t = useTranslations();
     if (!project) {
         return <div className="text-white text-center py-20 bg-gray-900">Projeto não encontrado.</div>;
     }
@@ -27,7 +28,7 @@ export default function ProjectDetailPage({ params }: { params: { projectSlug: s
             className="flex items-center text-teal-400 hover:text-teal-300 transition-colors mb-10 text-lg font-medium"
           >
             <FaArrowLeft className="mr-3" />
-            Voltar para Projetos
+            {t('BackToProjects')}
           </Link>
 
           <h1 className="text-5xl font-extrabold text-white mb-3 leading-tight">
@@ -43,7 +44,7 @@ export default function ProjectDetailPage({ params }: { params: { projectSlug: s
             className="flex items-center bg-gray-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-700 transition-colors shadow-lg"
             >
               <FaGithub className="mr-3" size={20} />
-              Código no GitHub
+              {t('CodeGitHub')}
             </Link>
             }
             {project.liveUrl && (
@@ -54,7 +55,7 @@ export default function ProjectDetailPage({ params }: { params: { projectSlug: s
                 className="flex items-center bg-teal-500 text-gray-900 font-bold py-3 px-6 rounded-lg hover:bg-teal-400 transition-colors shadow-lg"
               >
                 <FaExternalLinkAlt className="mr-3" size={16} />
-                Ver Site Ao Vivo
+                {t('SeeSite')}
               </Link>
             )}
           </div>
@@ -75,18 +76,15 @@ export default function ProjectDetailPage({ params }: { params: { projectSlug: s
                     fill 
                     src={image} 
                     alt={`Screenshot do projeto ${project.name}`}
-                    className="object-contain rounded-lg" // Usamos object-contain para garantir que a imagem não seja cortada
-                    sizes="(max-width: 640px) 85vw, (max-width: 1024px) 80vw, 70vw" // Otimização de imagem
+                    className="object-contain rounded-lg" 
+                    sizes="(max-width: 640px) 85vw, (max-width: 1024px) 80vw, 70vw" 
                 />
               </div>
             ))}
           </div>
-          {/* ================================================ */}
-
-          {/* SEÇÃO DE STACK TÉCNICA (Sem alteração) */}
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-white mb-4 border-b border-gray-700 pb-2">
-              Stack Técnica
+              {t('TechnicalStack')}
             </h2>
             <div className="flex flex-wrap gap-3">
               {project.technologies.map((tech) => (
@@ -98,18 +96,18 @@ export default function ProjectDetailPage({ params }: { params: { projectSlug: s
           {/* SEÇÕES DE TEXTO (Sem alteração) */}
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-white mb-4 border-b border-gray-700 pb-2">
-              Visão Geral
+              {t('Overview')}
             </h2>
             <p className="text-lg leading-relaxed">{project.overview}</p>
           </div>
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-white mb-4 border-b border-gray-700 pb-2">
-              Desafios e Soluções
+              {t('ChallengesSolutions')}
             </h2>
             <ul className="list-disc list-inside space-y-3 pl-4">
               {project.challenges.map((challenge, index) => (
                 <li key={index} className="text-lg">
-                  <span className="font-semibold text-teal-400">Desafio:</span>{" "}
+                  <span className="font-semibold text-teal-400">{t('Challenges')}:</span>{" "}
                   {challenge}
                 </li>
               ))}
@@ -117,7 +115,7 @@ export default function ProjectDetailPage({ params }: { params: { projectSlug: s
           </div>
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-white mb-4 border-b border-gray-700 pb-2">
-              Resultados Chave
+              {t('KeyResults')}
             </h2>
             <p className="text-lg leading-relaxed">{project.results}</p>
           </div>

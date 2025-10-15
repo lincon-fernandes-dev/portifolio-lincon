@@ -4,8 +4,10 @@ import Link from "next/link";
 import { FaLinkedinIn, FaGithub, FaFileAlt } from "react-icons/fa";
 import { FiMail, FiPhone } from "react-icons/fi";
 import emailjs from "@emailjs/browser";
+import { useTranslations } from "next-intl";
 
 export default function ContactPage() {
+  const t = useTranslations();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -57,19 +59,19 @@ export default function ContactPage() {
     <section id="contact" className="bg-gray-900 py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-white text-center mb-12 sm:mb-16">
-          Vamos Construir Algo Juntos?
+          {t('ShallWe')}
         </h2>
 
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
           <div className="lg:w-2/3 bg-gray-800 p-8 rounded-lg shadow-xl">
             <h3 className="text-2xl font-semibold text-white mb-6">
-              Envie-me uma mensagem
+              {t('SendMessage')}
             </h3>
 
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
-                  Nome Completo
+                  {t('FullName')}
                 </label>
                 <input
                   type="text"
@@ -84,7 +86,7 @@ export default function ContactPage() {
 
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
-                  Seu Melhor E-mail
+                  {t('BestEmailAddress')}
                 </label>
                 <input
                   type="email"
@@ -99,7 +101,7 @@ export default function ContactPage() {
 
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-1">
-                  Assunto
+                  {t('Subject')}
                 </label>
                 <input
                   type="text"
@@ -113,7 +115,7 @@ export default function ContactPage() {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">
-                  Mensagem
+                  {t('Message')}
                 </label>
                 <textarea
                   id="message"
@@ -131,7 +133,7 @@ export default function ContactPage() {
                 disabled={isSending}
                 className="w-full sm:w-auto bg-teal-500 text-gray-900 font-bold py-3 px-6 rounded-lg hover:bg-teal-400 transition-colors shadow-lg text-lg disabled:opacity-70"
               >
-                {isSending ? "Enviando..." : "Enviar Mensagem"}
+                {isSending ? "Enviando..." : t('SendEmail')}
               </button>
 
               {feedback && (
@@ -148,7 +150,7 @@ export default function ContactPage() {
 
           <div className="lg:w-1/3 space-y-10">
             <div>
-              <h3 className="text-2xl font-semibold text-white mb-4">Informações</h3>
+              <h3 className="text-2xl font-semibold text-white mb-4">{t('Information')}</h3>
               <div className="space-y-4">
                 <Link
                   href="mailto:lincon.dev@gmail.com"

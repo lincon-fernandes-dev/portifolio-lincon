@@ -1,0 +1,17 @@
+{
+  "AboutMe": "O mnie",
+  "Hello": "Witam, nazywam się",
+  "DevFullStack": "Programista Full-Stack",
+  "SeeMyWork": "Zobacz moje prace",
+  "Building": "Tworzenie kompletnych aplikacji przy użyciu C#/.NET, Windows Forms, Next.js i Angular w bezpieczny i skalowalny sposób.",
+  "Description": "Jestem programistą Full-Stack, który uwielbia przekształcać pomysły w solidne rozwiązania. Specjalizuję się w tworzeniu kompletnego ekosystemu aplikacji, łącząc moc C#/.NET w backendzie z wydajnością i nowoczesnością Next.js. Moja misja to dostarczanie bezpiecznego, skalowalnego kodu, skupionego na najlepszym doświadczeniu użytkownika.",
+  "KnowMyCareer": "Poznaj moją pełną karierę",
+  "About": "O mnie",
+  "AboutFirstParagraph": "Jestem programistą Full Stack, kierującym się ciekawością i chęcią przekształcania pomysłów w rozwiązania cyfrowe, które naprawdę mają wpływ. Działam głównie w obszarze backend z wykorzystaniem C#, ASP.NET Core i AngularJS, zawsze zgodnie z czystą architekturą i dobrymi praktykami kodowania.",
+  "AboutSecondParagraph": "Mam pełne doświadczenie w cyklu rozwoju oprogramowania — od planowania architektury po dostarczenie do produkcji. Cenię czysty kod, automatyczne testy i DevOps, aby zapewnić długoterminową jakość i zrównoważony rozwój. Wykorzystuję również swoje umiejętności w zakresie PostgreSQL / SQL i AWS / Azure do tworzenia skalowalnych i niezawodnych rozwiązań.",
+  "AboutThirdParagraph": "Swoją karierę rozpocząłem jako samouk, zawsze kierując się ciekawością i nieustannym poszukiwaniem wiedzy. To poświęcenie sprawiło, że stałem się coraz bardziej wszechstronnym programistą, przygotowanym na wyzwania rynku.",
+  "AboutFourthParagraph": "Zawsze poszukuję nowych wyzwań — zarówno technologicznych, jak i osobistych — które pozwolą mi rozwijać się jako profesjonalista i osiągać wyniki, które naprawdę mają znaczenie.",
+  "SeeCv": "Zobacz moje pełne CV",
+  "ShallWe": "Czy zbudujemy razem coś niesamowitego?",
+  "OpenForOpportunities":"Jestem otwarty na możliwości pracy jako programista backendowy lub full-stackowy — zdalnie lub osobiście"
+}

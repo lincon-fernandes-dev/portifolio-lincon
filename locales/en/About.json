@@ -1,0 +1,17 @@
+{
+  "AboutMe": "About me",
+  "Hello": "Hello, I am",
+  "Building": "Building complete applications with C#/.NET, Windows Forms, Next.js, and Angular in a secure and scalable manner.",
+  "SeeMyWork": "See My Work",
+  "DevFullStack": "Full-Stack Developer",
+  "Description": "I am a Full-Stack Developer passionate about turning ideas into robust solutions. My specialty is creating the complete application ecosystem, integrating the power of C#/.NET in the backend with the efficiency and modernity of Next.js. My mission is to deliver secure, scalable code focused on the best user experience.",
+  "KnowMyCareer": "Learn about my complete career path",
+  "About": "About",
+  "AboutFirstParagraph": "I am a Full Stack Developer driven by curiosity and the desire to transform ideas into digital solutions that really make an impact. I work mainly on the backend with C#, ASP.NET Core, and AngularJS, always aligned with clean architecture and good coding practices.",
+  "AboutSecondParagraph": "I have comprehensive experience in the software development cycle—from architecture planning to production delivery. I value clean code, automated testing, and DevOps to ensure long-term quality and sustainability. I also apply my skills with PostgreSQL/SQL and AWS/Azure to create scalable and reliable solutions.",
+  "AboutThirdParagraph": "I started my career as a self-taught developer, always driven by research and the constant pursuit of knowledge. This dedication has made me an increasingly well-rounded developer, prepared for the challenges of the market.",
+  "AboutFourthParagraph": "I am always looking for new challenges—whether technological or personal—that allow me to evolve as a professional and deliver results that make a real difference.",
+  "SeeCv": "See my complete resume",
+  "ShallWe": "Shall we build something amazing together?",
+  "OpenForOpportunities":"I am open to opportunities as a backend or full-stack developer—remote or in-person."
+}

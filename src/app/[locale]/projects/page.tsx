@@ -2,13 +2,15 @@ import Link from "next/link";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import {mockProjecstData} from "@/mock/mockProjects"
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function ProjectsGrid() {
+  const t = useTranslations();
   return (
     <section id="projects" className="bg-gray-900 py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-white text-center mb-12 sm:mb-16">
-          Meus Projetos de Destaque
+          {t('FeaturedProjects')}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
@@ -34,7 +36,7 @@ export default function ProjectsGrid() {
                       href={`/projects/${project.slug}`}
                       className="text-teal-400 hover:text-teal-300 font-semibold text-sm transition-colors border-b-2 border-teal-400 hover:border-teal-300"
                     >
-                      Ver Detalhes →
+                      {t('SeeDetails')} →
                     </Link>
                     <div className="flex space-x-4">
                         {project.githubUrl.length > 1 &&
