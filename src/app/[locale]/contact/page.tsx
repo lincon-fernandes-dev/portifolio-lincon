@@ -153,11 +153,11 @@ export default function ContactPage() {
               <h3 className="text-2xl font-semibold text-white mb-4">{t('Information')}</h3>
               <div className="space-y-4">
                 <Link
-                  href="mailto:lincon.dev@gmail.com"
+                  href="mailto:lincon.fernandes.dev@gmail.com"
                   className="flex items-center text-gray-300 hover:text-teal-400 transition-colors"
                 >
                   <FiMail size={24} className="mr-3 text-teal-400" />
-                  <span>lincon.dev@gmail.com</span>
+                  <span>lincon.fernandes.dev@gmail.com</span>
                 </Link>
 
                 <Link
