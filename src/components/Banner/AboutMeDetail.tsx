@@ -58,7 +58,7 @@ export default function AboutMeDetailComponent() {
 
             <div className="p-4 h-[80vh]">
               <iframe
-                src="/curriculo-lincon.pdf"
+                src={t('ResumeSrc')}
                 className="w-full h-full rounded-lg border border-gray-700"
               />
             </div>

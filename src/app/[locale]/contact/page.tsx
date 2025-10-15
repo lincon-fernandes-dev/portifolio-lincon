@@ -195,7 +195,7 @@ export default function ContactPage() {
                 </Link>
 
                 <Link
-                  href="/curriculo-lincon.pdf"
+                  href={t('ResumeSrc')}
                   target="_blank"
                   aria-label="Download CV"
                   className="text-gray-400 hover:text-teal-400 transition-colors"
