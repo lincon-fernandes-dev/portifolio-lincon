@@ -5,7 +5,7 @@ import ProjectsCarrousselComponent from "@/components/Projects/ProjectsCarrousse
 
 export default function Home() {
   return (
-    <section id="about" className="bg-gray-800 py-8 px-4 sm:px-6 lg:px-8">
+    <section className="bg-gray-800 py-8 px-4 sm:px-6 lg:px-8">
       <HeroSection />
       <ProjectsCarrousselComponent />
       <BannerAboutMeComponent />
