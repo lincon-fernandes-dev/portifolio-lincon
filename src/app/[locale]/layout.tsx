@@ -38,7 +38,7 @@ export default async function RootLayout({
     notFound();
   }
   return (
-    <html lang="pt-BR">
+    <html lang={locale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-800 text-white min-h-screen max-w-full`}
       >

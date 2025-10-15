@@ -1,14 +1,13 @@
 import Link from "next/link";
+import { FC } from "react";
+import { HeaderMobileMenuProps } from "./types";
 
-const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'Projetos', href: '/projects' },
-    { name: 'Habilidades', href: '/skills' },
-    { name: 'Sobre', href: '/about' },
-    { name: 'Contato', href: '/contact' },
-  ];
-
-export function MobileMenu({isMenuOpen, setIsMenuOpen}: {isMenuOpen: boolean, setIsMenuOpen: (isMenuOpen: boolean) => void}) {
+export const MobileMenu: FC<HeaderMobileMenuProps> = 
+({
+  isMenuOpen,
+  setIsMenuOpen,
+  navLinks
+}) =>  {
   return (
     <div
       className={`md:hidden ${

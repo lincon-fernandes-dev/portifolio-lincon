@@ -1,18 +1,19 @@
 "use client";
 import Link from "next/link";
-import { useState } from 'react';
-import { FiMenu, FiX } from 'react-icons/fi';
+import { useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
 import { MobileMenu } from "./HeaderMenu";
 import LocaleSwitcher from "../LocaleSwitcher";
 import { useTranslations } from "next-intl";
+import { navLink } from "./types";
 
-const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'Skills', href: '/skills' },
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
-  ];
+const navLinks: navLink[] = [
+  { name: "Home", href: "/" },
+  { name: "Projects", href: "/projects" },
+  { name: "Skills", href: "/skills" },
+  { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
+];
 
 export default function HeaderComponent() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +21,10 @@ export default function HeaderComponent() {
   return (
     <header className="sticky top-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-sm shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <Link href={"/"} className="text-2xl font-bold text-teal-400 hover:text-teal-300 transition-colors tracking-wider">
+        <Link
+          href={"/"}
+          className="text-2xl font-bold text-teal-400 hover:text-teal-300 transition-colors tracking-wider"
+        >
           Lincon.dev
         </Link>
         <LocaleSwitcher />
@@ -44,8 +48,7 @@ export default function HeaderComponent() {
           {isMenuOpen ? <FiX size={28} /> : <FiMenu size={28} />}
         </button>
       </div>
-          <MobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      
+      <MobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} navLinks={navLinks} />
     </header>
   );
 }
