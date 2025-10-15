@@ -80,7 +80,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-teal-500"
-                  placeholder="Seu nome"
+                  placeholder={t('YourName')}
                 />
               </div>
 
@@ -172,7 +172,9 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold text-white mb-4">Mídias Profissionais</h3>
+              <h3 className="text-2xl font-semibold text-white mb-4">
+                {t('ProfessionalMedia')}
+              </h3>
               <div className="flex space-x-6">
                 <Link
                   href="https://www.linkedin.com/in/lincon-fernandes-bb497613b/"
