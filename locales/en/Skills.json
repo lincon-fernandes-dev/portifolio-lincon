@@ -2,5 +2,9 @@
   "MySkillsStack": "My Skills and Stack",
   "FrontEnd": "Front-end (Next.js & React)",
   "BackEnd": "Back-end (C# & .NET)",
-  "DevOpsDatabase": "DevOps & Database"
+  "DevOpsDatabase": "DevOps & Database",
+  "AlwaysLearning": "Always Learning",
+  "DesignTools": "Design Tools",
+  "ConceptsPatterns": "Concepts Patterns",
+  "SkillsDescription": "Skills Description"
 }

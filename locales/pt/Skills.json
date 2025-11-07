@@ -2,5 +2,9 @@
   "MySkillsStack": "As minhas competências e conhecimentos",
   "FrontEnd": "Front-end (Next.js & React)",
   "BackEnd": "Back-end (C# & .NET)",
-  "DevOpsDatabase": "DevOps & Base de dados"
+  "DevOpsDatabase": "DevOps & Base de dados",
+  "AlwaysLearning": "Sempre Aprendendo",
+  "DesignTools": "Ferramentas de design",
+  "ConceptsPatterns": "Padrões de conceitos",
+  "SkillsDescription": "Descrição das habilidades"
 }
