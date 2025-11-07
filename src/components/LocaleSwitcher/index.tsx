@@ -17,7 +17,9 @@ export default function LocaleSwitcher() {
 
   return (
     <div className={styles.selectWrapper}>
-
+    <label htmlFor="locale-select" className="sr-only">
+        Selecione o idioma
+    </label>
     <select
       className={styles.select}
       value={locale}

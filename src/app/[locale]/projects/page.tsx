@@ -34,6 +34,7 @@ export default function ProjectsGrid() {
                 <div className="flex justify-between items-center mt-4">
                     <Link
                       href={`/projects/${project.slug}`}
+                      aria-label={project.name}
                       className="text-teal-400 hover:text-teal-300 font-semibold text-sm transition-colors border-b-2 border-teal-400 hover:border-teal-300"
                     >
                       {t('SeeDetails')} →

@@ -43,6 +43,7 @@ export default function ProjectCardComponent({
         <div className="flex justify-between items-center pt-2 border-t border-gray-700">
           <Link
             href={`/projects/${slug}`}
+            aria-label={name}
             className="text-teal-400 hover:text-teal-300 font-semibold text-sm transition-colors border-b border-teal-400"
           >
             {t("SeeDetails")}

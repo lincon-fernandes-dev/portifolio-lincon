@@ -19,7 +19,7 @@ export default function HeaderComponent() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const t = useTranslations();
   return (
-    <header role="header" className="sticky top-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-sm shadow-md">
+    <header className="sticky top-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-sm shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         <Link
           href={"/"}
