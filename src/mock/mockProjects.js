@@ -49,8 +49,7 @@ export const mockProjecstData = [
         thumbUrl: "/oratiolab.png",
         images: [
             "/Projects/oratiolab/home.png",
-            "/Projects/oratiolab/about.png",
-            "/Projects/oratiolab/instructions.png",
+            "/Projects/oratiolab/about.png"
         ],
         githubUrl: "",
         liveUrl: "https://oratiolab.vercel.app/",
