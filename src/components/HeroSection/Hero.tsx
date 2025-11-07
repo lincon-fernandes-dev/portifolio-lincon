@@ -5,6 +5,7 @@ export default function HeroSection() {
   const t = useTranslations();
   return (
     <section
+      role="main"
       id="home"
       className="flex flex-col justify-center items-center text-center py-4"
     >

@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 export default function BannerAboutMeComponent() {
     const t = useTranslations();
   return (
-    <section id="about-banner" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section role="banner" id="about-banner" className="py-20 px-4 sm:px-6 lg:px-8">
         
         <div 
             className="max-w-6xl mx-auto p-8 sm:p-12 rounded-xl bg-gray-800 border border-gray-700 shadow-2xl 

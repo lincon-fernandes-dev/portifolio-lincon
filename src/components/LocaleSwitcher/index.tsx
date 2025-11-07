@@ -22,9 +22,9 @@ export default function LocaleSwitcher() {
       className={styles.select}
       value={locale}
       onChange={e => switchLocale(e.target.value)}>
-      <option value="pt">PT</option>
-      <option value="en">EN</option>
-      <option value="pl">PL</option>
+      <option label="portuguese" value="pt">PT</option>
+      <option label="english" value="en">EN</option>
+      <option label="polish" value="pl">PL</option>
     </select>
         </div>
   );

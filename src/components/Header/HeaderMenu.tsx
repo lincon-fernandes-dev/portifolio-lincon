@@ -14,7 +14,7 @@ export const MobileMenu: FC<HeaderMobileMenuProps> =
         isMenuOpen ? "block" : "hidden"
       } absolute w-full bg-gray-800 shadow-lg transition-all duration-300 ease-in-out`}
     >
-      <nav className="flex flex-col p-4 space-y-2">
+      <nav role="navigation" className="flex flex-col p-4 space-y-2">
         {navLinks.map((link) => (
           <Link
             key={link.name}
